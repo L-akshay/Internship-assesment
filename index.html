@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopify UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!---- Main Product Image -->
+    <div class="left-column">
+      <img src="images/shirt.png" alt="T-shirt" class="main-product" id="main-img"/>
+      <div class="thumbnail-row">
+        <img src="images/shirt.png" class="thumb active" />
+        <img src="images/shirt-black.png" class="thumb" />
+        <img src="images/shirt-blue.png" class="thumb" />
+        <img src="images/shirt-white.png" class="thumb" />
+      </div>
+    </div>
+
+    <!--  Product Details -->
+    <div class="right-column">
+      <h1>T-shirt</h1>
+      <div class="stars">★★★★★ <span>(12 reviews)</span></div>
+      <p class="price">$19.99</p>
+
+      <label>Color</label>
+      <div class="swatches">
+        <span class="swatch black"></span>
+        <span class="swatch navy"></span>
+        <span class="swatch grey"></span>
+      </div>
+
+      <label for="size">Size</label>
+      <div class="size-row">
+        <select id="size">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+        <button class="size-chart">Size Chart</button>
+      </div>
+
+      <button class="compare">Compare Colors</button>
+
+      <h3>Buy these together</h3>
+      <div class="bundle-items">
+        <img src="images/shirt.png" />
+        <img src="images/shirt-cream.png" />
+        <img src="images/bag.png" />
+      </div>
+      <p>Total: $139.99</p>
+      <button class="add-bundle">Add Bundle to Cart</button>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button class="tab active">Description</button>
+    <button class="tab">Product Information</button>
+    <button class="tab">Shipping Details</button>
+  </div>
+
+ <div class="tab-content active">
+  <div class="description-block">
+    <div class="item">
+      <img src="images/pants.png">
+      <p>Jeans<br><strong>$49.99</strong></p>
+    </div>
+    <div class="item">
+      <img src="images/shoes.png">
+      <p>Sneakers<br><strong>$39.99</strong></p>
+    </div>
+    <div class="item total">
+      <p>Total<br><strong>$159</strong></p>
+      <button class="add-bundle">Add Bundle to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Related Products -->
+  <h2 class="related-title">Related Products</h2>
+  <div class="related-products">
+    <div class="card">
+      <img src="images/shirt-black.png" />
+      <p>Black T-shirt - $29</p>
+      <span class="badge new">New</span>
+      <span class="badge popular">Popular</span>
+    </div>
+    <div class="card">
+      <img src="images/shirt-white.png" />
+      <p>White T-shirt - $29</p>
+    </div>
+    <div class="card">
+      <img src="images/shirt-beige.png" />
+      <p>Beige T-shirt - $29</p>
+    </div>
+    <div class="card">
+      <img src="images/shirt-green.png" />
+      <p>Green T-shirt - $29</p>
+    </div>
+  </div>
+  <!-- Size Chart Modal -->
+<div id="modal-size-chart" class="modal hidden">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Size Chart</h3>
+    <table>
+      <tr><th>Size</th><th>Chest</th><th>Length</th></tr>
+      <tr><td>S</td><td>38"</td><td>26"</td></tr>
+      <tr><td>M</td><td>40"</td><td>27"</td></tr>
+      <tr><td>L</td><td>42"</td><td>28"</td></tr>
+    </table>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
